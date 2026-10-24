@@ -1,4 +1,3 @@
-/* 1. Base Setup */
 * {
     margin: 0;
     padding: 0;
@@ -14,10 +13,9 @@ body {
 
 html {
     scroll-behavior: smooth; 
-    scroll-padding-top: 75px; /* Adds space for the sticky top menu */
+    scroll-padding-top: 75px;
 }
 
-/* 2. Top Navigation Bar */
 .top-nav {
     display: flex;
     justify-content: space-between;
@@ -64,10 +62,9 @@ html {
     width: 100%;
 }
 
-/* 3. Main Sections & Profile Picture */
 section {
     padding: 80px 20px;
-    min-height: 100vh; /* Forces each section to take up the full screen height */
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -105,7 +102,6 @@ h2 {
     color: #fcd34d;
 }
 
-/* 4. Project Cards */
 #projects {
     background-color: #161c2d;
 }
@@ -133,7 +129,6 @@ h2 {
     border-top: 3px solid #ffea99;
 }
 
-/* 5. Contact Form */
 #contactForm {
     display: flex;
     flex-direction: column;
@@ -178,7 +173,6 @@ h2 {
     font-weight: bold;
 }
 
-/* 6. Mobile Phone View */
 @media (max-width: 600px) {
     .top-nav {
         flex-direction: column;
@@ -187,7 +181,6 @@ h2 {
     }
 }
 
-/* 7. Animations */
 @keyframes float {
     0% { transform: translateY(0px); }
     50% { transform: translateY(-12px); }
@@ -205,7 +198,6 @@ h2 {
     transform: translateY(0); 
 }
 
-/* 8. Extra Details (Skills, Buttons, Footer) */
 .skills-grid {
     display: flex;
     flex-wrap: wrap;
@@ -257,7 +249,6 @@ footer {
     margin-top: 40px;
 }
 
-/* 9. Modal (Pop-Up) Styles */
 .modal {
     display: none;
     position: fixed;
