@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rayver Villaganas | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <header class="top-nav">
+        <div class="logo">RV.</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 1. Home Page Section -->
+        <section id="home">
+            <div class="profile-container">
+                <img src="rayver1.jpg" alt="Rayver Villaganas Profile Picture" class="profile-pic">
+            </div>
+            <h1 class="reveal">Welcome to my portfolio! I am Rayver.</h1>
+            <p class="reveal">An Information Technology student at National University building clean and useful web apps.</p>
+        </section>
+
+        <!-- 2. About Me Section -->
+        <section id="about">
+            <h2 class="reveal">About Me</h2>
+            <div class="about-content reveal" style="max-width: 800px; text-align: left; background: #0b0e18; padding: 30px; border-radius: 10px; border-top: 3px solid #fcd34d;">
+                
+                <h3 style="color: #fcd34d; margin-bottom: 5px;">Personal Info & Education</h3>
+                <p style="margin-bottom: 20px;">My name is Rayver Villaganas. I am currently studying Bachelor of Science in Information Technology at National University, Manila. I am taking the Integrative Programming course, where I learn how to connect different systems and build web applications.</p>
+                
+                <h3 style="color: #fcd34d; margin-bottom: 15px;">My IT Skills</h3>
+                <div class="skills-grid">
+                    <span class="skill-badge">HTML & CSS</span>
+                    <span class="skill-badge">JavaScript (Async)</span>
+                    <span class="skill-badge">Cisco Networking</span>
+                </div>
+
+                <h3 style="color: #fcd34d; margin-bottom: 5px; margin-top: 20px;">My Interests</h3>
+                <p>When I am not coding, I enjoy documentary photography. I like taking pictures of buildings and daily life, just like my recent photo shoot at the Jhocson Memorial Building (JMB) on campus.</p>
+            </div>
+        </section>
+
+        <!-- 3. Projects/Portfolio Section -->
+        <section id="projects">
+            <h2 class="reveal">My Work</h2>
+            <p class="reveal" style="margin-bottom: 30px;">Here is my featured project.</p>
+            <div class="project-container">
+                
+                <!-- Featured Project -->
+                <div class="card reveal">
+                    <h3 style="color: #fcd34d;">Interactive Monthsary Letter</h3>
+                    <p style="margin-bottom: 10px;">A custom web-based love letter. It features a clean design, smooth fade-in animations, and hidden interactive messages.</p>
+                    <p style="font-size: 0.9rem; color: #aaa; margin-bottom: 15px;"><strong>Tools used:</strong> HTML, CSS, JavaScript</p>
+                    <button id="openModalBtn" class="project-btn">View Details</button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 4. Contact Page Section -->
+        <section id="contact">
+            <h2 class="reveal">Contact Me</h2>
+            
+            <div class="reveal" style="margin-bottom: 20px; color: #e4e6eb;">
+                <p><strong>Email:</strong> villaganasrr1@students.national-u.edu.ph</p>
+                <p><strong>Location:</strong> Manila, Philippines</p>
+                <p><strong>GitHub:</strong> github.com/Achiiii3</p>
+            </div>
+
+            <form id="contactForm" class="reveal">
+                <input type="text" id="name" placeholder="Your Full Name">
+                <input type="email" id="email" placeholder="Your Email Address">
+                <button type="submit">Send Message</button>
+                <p id="error-msg"></p>
+            </form>
+        </section>
+
+        <!-- The Hidden Pop-Up Window (Modal) -->
+        <div id="projectModal" class="modal">
+            <div class="modal-content">
+                <span id="closeModalBtn" class="close-btn">&times;</span>
+                <h2 style="color: #fcd34d; margin-bottom: 15px;">Interactive Monthsary Letter</h2>
+                <p style="margin-bottom: 15px; color: #e4e6eb;">This project is a custom web-based love letter I built from scratch. I designed it with a deep night-blue and warm gold theme, complete with smooth fade-in animations triggered by JavaScript.</p>
+                
+                <p style="color: #fcd34d; font-weight: bold; text-align: left; margin-bottom: 5px;">Key Features:</p>
+                <ul style="text-align: left; margin-left: 20px; color: #e4e6eb; line-height: 1.8; margin-bottom: 15px;">
+                    <li>Hidden interactive messages revealed on click</li>
+                    <li>CSS fade-in animations and hover transitions</li>
+                    <li>Fully responsive layout for mobile and desktop screens</li>
+                </ul>
+                <p style="font-size: 0.9rem; color: #aaa; border-top: 1px solid #333; padding-top: 10px;">Status: Completed in October 2026</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2026 Rayver Villaganas. Built for Integrative Programming.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
