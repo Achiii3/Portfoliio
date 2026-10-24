@@ -1,4 +1,3 @@
-// 1. The Contact Form Validator
 class FormValidator {
     constructor(formId, nameId, emailId, errorId) {
         this.form = document.getElementById(formId);
@@ -31,7 +30,6 @@ class FormValidator {
     }
 }
 
-// 2. The Scroll Animation Controller
 class ScrollAnimator {
     constructor(targetClass) {
         this.elements = document.querySelectorAll(targetClass);
@@ -52,7 +50,6 @@ class ScrollAnimator {
     }
 }
 
-// 3. The Modal Controller
 class ModalController {
     constructor(modalId, openBtnId, closeBtnId) {
         this.modal = document.getElementById(modalId);
@@ -90,7 +87,6 @@ class ModalController {
     }
 }
 
-// Start all programs
 const contactCheck = new FormValidator('contactForm', 'name', 'email', 'error-msg');
 
 const scrollEffects = new ScrollAnimator('.reveal');
